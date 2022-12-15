@@ -36,6 +36,8 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem_start = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem_finish = new System.Windows.Forms.ToolStripMenuItem();
+            this.button2 = new System.Windows.Forms.Button();
+            this.checkBox_conf = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -72,11 +74,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(688, 153);
+            this.button1.Location = new System.Drawing.Point(658, 152);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Загрузка";
+            this.button1.Text = "Обновить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -91,16 +93,37 @@
             // toolStripMenuItem_start
             // 
             this.toolStripMenuItem_start.Name = "toolStripMenuItem_start";
-            this.toolStripMenuItem_start.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_start.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem_start.Text = "Старт";
             this.toolStripMenuItem_start.Click += new System.EventHandler(this.toolStripMenuItem_start_Click);
             // 
             // toolStripMenuItem_finish
             // 
             this.toolStripMenuItem_finish.Name = "toolStripMenuItem_finish";
-            this.toolStripMenuItem_finish.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_finish.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem_finish.Text = "Финиш";
             this.toolStripMenuItem_finish.Click += new System.EventHandler(this.toolStripMenuItem_finish_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(658, 181);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Путь";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // checkBox_conf
+            // 
+            this.checkBox_conf.AutoSize = true;
+            this.checkBox_conf.Location = new System.Drawing.Point(479, 418);
+            this.checkBox_conf.Name = "checkBox_conf";
+            this.checkBox_conf.Size = new System.Drawing.Size(173, 17);
+            this.checkBox_conf.TabIndex = 6;
+            this.checkBox_conf.Text = "Пространство конфигураций";
+            this.checkBox_conf.UseVisualStyleBackColor = true;
+            this.checkBox_conf.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // Form1
             // 
@@ -108,15 +131,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBox_conf);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button_save);
             this.Controls.Add(this.button_load);
             this.Controls.Add(this.pictureBox1);
+            this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Щербинин Григорий 201-325";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -129,6 +156,8 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_start;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_finish;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox checkBox_conf;
     }
 }
 
